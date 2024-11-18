@@ -22,7 +22,7 @@ jobs:
         uses: actions/setup-java@v2
         with:
           java-version: '11'
-          distribution: 'adoptopenjdk'  # Especificar la distribución de Java
+          distribution: 'openjdk'  # Especificar la distribución de Java
 
       # Compilar el proyecto usando Maven
       - name: Build with Maven
