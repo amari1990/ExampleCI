@@ -22,11 +22,12 @@ jobs:
         uses: actions/setup-java@v2
         with:
           java-version: '11'
+          distribution: 'adoptopenjdk'  # Especificar la distribución de Java
 
-      # Compilar el proyecto usando Maven (puedes usar Gradle si prefieres)
+      # Compilar el proyecto usando Maven
       - name: Build with Maven
         run: mvn clean install
 
-      # Ejecutar el código Java (solo para asegurarnos de que funcione correctamente)
+      # Ejecutar el código Java
       - name: Run Java program
         run: java -cp target/classes Sum
