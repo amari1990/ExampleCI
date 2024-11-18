@@ -32,4 +32,4 @@ jobs:
 
       # Ejecutar el código Java
       - name: Run Java program
-        run: java -cp bin Sum
+        run: java -cp target/classes Sum
